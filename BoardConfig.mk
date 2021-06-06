@@ -36,7 +36,7 @@ TARGET_KERNEL_CONFIG := lavender_defconfig
 TARGET_KERNEL_SOURCE := kernel/msm-4.19
 
 # Manifest
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Platform
 BOARD_VENDOR_PLATFORM := xiaomi-sdm660
