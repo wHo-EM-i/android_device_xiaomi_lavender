@@ -1,0 +1,20 @@
+[
+  {
+    "remote": "github",
+    "repository"  : "wHo-EM-i/device_sdm660-common",
+    "target_path" : "device/xiaomi/sdm660-common",
+    "branch": "12.0-4.19"
+  },
+  {
+    "remote": "github",
+    "repository"  : "wHo-EM-i/android_vendor_xiaomi_lavender",
+    "target_path" : "vendor/xiaomi/lavender",
+    "branch": "12.0-4.19"
+  },
+  {
+    "remote": "github",
+    "repository": "wHo-EM-i/vendor_xiaomi_sdm660-common",
+    "target_path": "vendor/xiaomi/sdm660-common",
+    "branch": "12.0-4.19"
+  }
+]
