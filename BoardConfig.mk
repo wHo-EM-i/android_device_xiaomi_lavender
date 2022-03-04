@@ -33,6 +33,7 @@ BOARD_KERNEL_CMDLINE += skip_initramfs rootwait ro init=/init
 
 # Kernel
 TARGET_KERNEL_CONFIG := lavender_defconfig
+TARGET_KERNEL_SOURCE := kernel/msm-4.19
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
