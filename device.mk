@@ -15,6 +15,9 @@ TARGET_BOARD_PLATFORM := sdm660
 # Device Path
 DEVICE_PATH := device/xiaomi/lavender
 
+# Kernel
+TARGET_KERNEL_VERSION := 4.19
+
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
