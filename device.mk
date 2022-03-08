@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-	vendor.qti.hardware.vibrator@1.2-service
+	vendor.qti.hardware.vibrator.service
 
 # Wifi
 PRODUCT_PACKAGES += \
