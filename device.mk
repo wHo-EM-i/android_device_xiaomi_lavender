@@ -36,10 +36,7 @@ TARGET_BOOTANIMATION_SIZE := 1080
 TARGET_SCREEN_HEIGHT := 2340
 TARGET_SCREEN_WIDTH := 1080
 
-# Consumerir
-PRODUCT_PACKAGES += \
-	android.hardware.ir@1.0-impl \
-	android.hardware.ir@1.0-service
+BOARD_HAVE_IR := true
 
 # Device properties
 $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
@@ -47,18 +44,13 @@ $(call inherit-product, $(DEVICE_PATH)/device_prop.mk)
 # FM
 BOARD_HAVE_QCOM_FM := true
 
-# Fstab
-PRODUCT_PACKAGES += \
-	fstab.qcom
-
 # Media
 PRODUCT_COPY_FILES += \
 	$(DEVICE_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 # Permissions
 PRODUCT_COPY_FILES += \
-	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
+	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml
 
 # Properties ($PATH.prop)
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
