@@ -36,7 +36,6 @@ REVENGEOS_BUILDTYPE := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Build Fingerprint
-BUILD_FINGERPRINT := "google/coral/coral:13/TP1A.220624.014/8819323:user/release-keys"
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
